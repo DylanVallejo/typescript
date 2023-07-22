@@ -12,9 +12,31 @@ function multiply(firstNumber: number, secondNumber?:number, base:number = 2){
     return firstNumber * base;
 }
 
-const result = addNumbers(2,2);
-const resulArrow:string = addNumbersArrow(5,5);
-const multiplyResult:number = multiply(6);
-console.log({result, resulArrow,multiplyResult});
+// const result = addNumbers(2,2);
+// const resulArrow:string = addNumbersArrow(5,5);
+// const multiplyResult:number = multiply(6);
+// console.log({result, resulArrow,multiplyResult});
+interface Character {
+    name: string;
+    hp: number;
+    showHp: () => void;
+}
+
+const healCharacter = ( character:Character, amount: number ) => {
+    
+    character.hp += amount;
+    
+}
+
+const strider : Character = {
+    name: 'Strider',
+    hp: 50,
+    showHp(){
+        console.log(`puntos de vida ${this.hp}`);
+    }
+}
+
+healCharacter(strider, 100);
+strider.showHp();
 
 export{}

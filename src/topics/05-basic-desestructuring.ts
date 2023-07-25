@@ -26,8 +26,18 @@ const {audioVolume: volumen, details} = audioPlayer;
 // const { details } = audioPlayer;
 
 const { author } = details
-console.log(volumen)
-console.log(author)
+// console.log(volumen)
 // console.log(author)
+// console.log(author)
+
+//array desestructuring 
+
+const [, ,trunks= ' Not found']: string[] = ['Goku', 'Vegeta', 'Trunks'];
+// const trunks = dbz[3] || 'No existe personaje';
+
+
+console.error('Personaje 3:' , trunks || ' Personaje no encontrado');
+
+
 
 export {};

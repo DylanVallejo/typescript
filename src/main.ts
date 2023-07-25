@@ -6,7 +6,9 @@ import { setupCounter } from './counter.ts'
 // import './topics/02-object-interfaces.ts'
 // import './topics/03-functions.ts'
 // import './topics/04-homework-types.ts'
-import './topics/05-basic-desestructuring.ts'
+// import './topics/05-basic-desestructuring.ts'
+// import './topics/06-function-desestructurimg.ts'
+import './topics/07-import-export.ts'
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
@@ -31,4 +33,4 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 `
 
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
-console.log('hola mundo')
+// console.log('hola mundo')

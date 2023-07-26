@@ -8,7 +8,9 @@ import { setupCounter } from './counter.ts'
 // import './topics/04-homework-types.ts'
 // import './topics/05-basic-desestructuring.ts'
 // import './topics/06-function-desestructurimg.ts'
-import './topics/07-import-export.ts'
+// import './topics/07-import-export.ts'
+import './topics/08-classes.ts'
+
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `

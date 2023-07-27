@@ -4,9 +4,11 @@ export function whatsMyType<T>( argument:T ):T {
     
     return argument;
 }
-const amIString = whatsMyType('Hola mundo');
-const amINUmber = whatsMyType(100);
-const amIArray= whatsMyType([1,2,3,4,5]);
+
+// definimos el tipo de dato que se convertira el generico t
+const amIString = whatsMyType<string>('Hola mundo');
+const amINUmber = whatsMyType<number>(100);
+const amIArray= whatsMyType<number[]>([1,2,3,4,5]);
 
 
 
